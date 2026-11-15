@@ -16,6 +16,7 @@ jobs:
   test:
     name: Test changed-files
     runs-on: ${{ matrix.platform }}
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       max-parallel: 7
